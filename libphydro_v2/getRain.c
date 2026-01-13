@@ -263,7 +263,7 @@ void getRain(char *fname,
                        shortwin,angle_number,DP_SCALEING);
             computeKdp(*header,polargrid_PHI_long,polargrid_RHO_3d,polargrid_Z_3d,polargrid_KDP_long,
                        longwin,angle_number,DP_SCALEING);
-            adjustKdp(*header,ang,polargrid_Z_3d,polargrid_KDP_short,polargrid_KDP_long);
+            adjustKdp(*header,angle_number,polargrid_Z_3d,polargrid_KDP_short,polargrid_KDP_long); // corrected: ang -> angle_number
         }
 
         /* 7. compute specific attenuation and estimate rain rate */
